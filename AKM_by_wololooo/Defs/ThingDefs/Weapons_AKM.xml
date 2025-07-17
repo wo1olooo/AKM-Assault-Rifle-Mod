@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<Defs>
+  <ThingDef ParentName="BaseHumanMakeableGun">
+	<!-- Define the gun name, labels etc. -->
+    <defName>Gun_AKM_wololooo</defName>
+    <label>AKM</label>
+	
+    <description>A refined weapon born from the fading twilight of Old Earth — not a desperate prototype, but the perfected legacy of those that came before. Forged during the 1950s in the crumbling Soviet Union, the AKM was the culmination of a brutal design lineage: an answer to the failures of early automatic rifles like the AVS-36 and the AS-44.
+
+Where those weapons faltered, the AKM thrived. Chambered in the 7.62×39mm intermediate round, it struck a rare balance — powerful, controllable, and absurdly durable. Lighter than the AK-47 it succeeded, and far more reliable than its ancestors, the AKM could be built easily and mass, field-stripped in seconds, and trusted across every battlefield — from Earth’s last frozen fronts to the burning, dust-choked colonies of the far Rim.
+
+It was not elegant. It was not rare. But it survived.
+
+Centuries after Earth was lost to silence and ash, a fragmentary cache of AKM schematics was discovered aboard a decaying orbital outpost — half-buried in code corruption and memory rot. A Rimworld weaponsmith, scraping by on a forgotten moon, managed the impossible: to resurrect the design, piece by piece.
+
+Now, the AKM lives again — in the hands of scavengers, settlers, and soldiers alike. Not as a symbol of glory, but of grit. Of purpose. Of survival.
+
+Not rare. Not perfect. Just real — and ready.
+
+A legacy forged in failure. Reborn through fire. Still here.
+
+~wololooo</description>
+	
+	
+	<!-- The rifle's spite location: -->
+    <graphicData>
+      <texPath>Things/Equipment/wololooo_AKM</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>1.10</drawSize>
+    </graphicData>
+	
+	<!-- The rifle's sound, I will use the basic game's sound currently. -->
+    <soundInteract>Interact_Rifle</soundInteract>
+	
+	<!-- The recipe of the gun. -->
+    <recipeMaker>
+	
+	  <!-- Where the weapon will crafted at. -->
+	  <recipeUsers>
+		<li>TableMachining</li>
+	  </recipeUsers>
+	  
+	  <!-- What should be researched before to create the gun. -->
+      <researchPrerequisite>Research_AKM_by_wololooo</researchPrerequisite>
+	  
+	  <!-- The skill requirement to craft the weapon. -->
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+	  
+	  
+	  <!-- The gun's display place. -->
+      <displayPriority>437</displayPriority>
+    </recipeMaker>
+	
+	
+	<!-- By this, the gun also can be obtained from the quests. -->
+    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+	
+
+	<!-- The rifle's stats: -->
+    <statBases>
+      <WorkToMake>26000</WorkToMake>
+      <Mass>3.9</Mass>
+      <AccuracyTouch>0.66</AccuracyTouch>
+      <AccuracyShort>0.70</AccuracyShort>
+      <AccuracyMedium>0.67</AccuracyMedium>
+      <AccuracyLong>0.54</AccuracyLong>
+      <RangedWeapon_Cooldown>1.7</RangedWeapon_Cooldown>
+	  <MarketValue>790</MarketValue>
+	  <MaxHitPoints>165</MaxHitPoints>
+    </statBases>
+	
+	
+	<!-- Which materials and how many of them will cost the rifle to craft: -->
+	<costList>
+	  <Steel>60</Steel>
+	  <ComponentIndustrial>3</ComponentIndustrial>
+	  <WoodLog>15</WoodLog>
+	</costList>
+	
+	
+	<!-- Smelt back recources. -->
+	<smeltable>true</smeltable>
+	<smeltProducts>
+		<Steel>40</Steel>
+	</smeltProducts>
+	
+	
+	<!-- What can be done with the rifle and how will it sound like: -->
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_AKM_762by39mm</defaultProjectile>
+        <warmupTime>1.0</warmupTime>
+        <range>28.5</range>
+        <burstShotCount>4</burstShotCount>
+        <ticksBetweenBurstShots>10.5</ticksBetweenBurstShots>
+        <soundCast>wololooo_akm_firing_sound</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>13</muzzleFlashScale>
+      </li>
+    </verbs>
+	
+	
+	<!-- The weapon tags: -->
+    <weaponTags>
+      <li>AKM</li>
+	  <li>wololoooSovietPack</li>
+	  <li>IndustrialGunAdvanced</li>
+    </weaponTags>
+	
+	
+	<!-- Also what can be done with the other parts of the gun: -->
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+	
+	
+	
+	<!-- The bullet will use the gun: -->
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_AKM_762by39mm</defName>
+    <label>7,62×39mm AKM bullet</label>
+
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	
+	<!-- The bullet specifications. -->
+    <projectile>
+      <damageDef>Bullet</damageDef>
+
+      <damageAmountBase>14</damageAmountBase>
+	  
+      <speed>66</speed> 
+
+	  <stoppingPower>1.35</stoppingPower>
+	  
+	  <armorPenetrationBase>0.37</armorPenetrationBase>
+	  
+	  
+    </projectile>
+  </ThingDef>
+  
+</Defs>

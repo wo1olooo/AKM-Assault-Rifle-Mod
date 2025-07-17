@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ModMetaData>
+  <name>AKM by Wololooo</name>
+  <author>wololooo</author>
+  <packageId>wololooo.AKM</packageId>
+  
+  <description>
+The AKM is not a prototype. It is the perfected form of an idea born in fire — the weapon that took root where others failed, and grew into legend. Forged in the ashes of Old Earth’s last great war, it was the Soviet Union’s answer to decades of brutal lessons in battlefield reality.
+
+Developed by Mikhail Kalashnikov and chambered in the 7.62×39mm intermediate cartridge, the AKM refined the revolutionary concepts first tested with the AK-47. Lighter, simpler, more reliable — it was built to endure mud, blood, and neglect. Where earlier designs jammed or splintered, the AKM kept firing. Not elegant. Not precise. But brutally, stubbornly effective.
+
+It became the rifle of revolutions and regimes. It flooded battlefields and warzones across continents. It didn’t just survive history — it shaped it.
+
+After Earth’s fall, the AKM vanished into silence like all things. But nothing that widespread truly disappears. Centuries later, its schematic was recovered from a gutted munitions archive aboard a drifting wreck near a forgotten mining moon. Rusted and incomplete, it was enough. A Rimworld weaponsmith restored it — piece by piece, round by round.
+
+Today, the AKM is once again in the hands of survivors, scavengers, and warlords. It is not rare. It is not exotic. But it works. It always works.
+
+A perfected design. An immortal tool. Common as dust — and just as hard to kill.
+
+~wololooo
+</description>
+	
+   <modDependencies>
+	<li>
+		<packageId>wololooo.sovietResearchTab</packageId>
+		<displayName>Soviet Rifle Research Tab</displayName>
+		<downloadUrl>https://github.com/wo1olooo/Soviet-Rifle-Research-Tab-by-Wololooo</downloadUrl>
+	</li>
+	<li>
+		<packageId>wololooo.ak47</packageId>
+		<displayName>AS-47</displayName>
+		<downloadUrl>https://github.com/wo1olooo/AK47-Assault-Rifle-Mod</downloadUrl>
+	</li>
+	
+  </modDependencies>
+  
+  <url>https://github.com/wo1olooo/AKM-Assault-Rifle-Mod</url>
+	
+	
+  <supportedVersions>
+	<li>1.6</li>
+    <li>1.5</li>
+  </supportedVersions>
+</ModMetaData>

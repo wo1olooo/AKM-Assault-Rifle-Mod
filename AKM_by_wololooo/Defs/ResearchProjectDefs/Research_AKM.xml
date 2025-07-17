@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ResearchProjectDef>
+  
+	<!-- Naming the rifle's research etc. -->
+    <defName>Research_AKM_by_wololooo</defName>
+    <label>AKM</label>
+	
+	<description>Recovered from the shattered databanks of a derelict pre-Fall armory ship, the AKM is one of Old Earth’s most enduring weapons — a refined descendant of the original AK-47.
+
+Designed in the 1950s by the fading Soviet Union, it was built for reliability above all else. Chambered in 7.62×39mm, the AKM was simple to produce, easy to repair, and nearly impossible to kill — a tool for soldiers, rebels, and survivors alike.
+
+Centuries after Earth’s collapse, its design resurfaced in corrupted schematics and salvaged parts. Reassembled on the Rim, it lives again — crude, loud, and unstoppable.
+
+Not rare. Not refined. Just real.
+A relic that outlived its world — and refuses to die.
+
+~wololooo</description>
+
+	<tab>SovietGuns_by_wololooo</tab>
+	
+	<!-- Cost and tech level. -->
+    <baseCost>2200</baseCost>
+    <techLevel>Industrial</techLevel>
+
+	<!-- The researche(s) should finished before the rifle's research. -->
+	
+	<prerequisites>
+      <li>Gunsmithing</li>
+	  <li>PrecisionRifling</li>
+	  <li>Soviet_Research_Program</li>
+	  <li>Research_AK47_by_wololooo</li>
+    </prerequisites>
+	
+	<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+	
+	<!-- The place of rifle's on the research menu. -->
+    <researchViewX>4</researchViewX>
+    <researchViewY>0</researchViewY>
+	
+
+  </ResearchProjectDef>
+
+</Defs>
