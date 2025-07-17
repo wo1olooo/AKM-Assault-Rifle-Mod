@@ -28,7 +28,7 @@ This mod **requires**:
 and 
 🔗 [AK-47 by Wololooo](https://steamcommunity.com/sharedfiles/filedetails/?id=3527631717&searchtext=)
 
-Make sure the **AKM mod is loaded after** the research tab in your mod list.
+Make sure the **AKM mod is loaded after** these two mods in your mod list.
 
 ---
 
